@@ -1,10 +1,20 @@
-import Link from 'next/link'
+import Link from 'next/link';
 import { forwardRef } from 'react';
 import React from 'react';
+import { useRouter } from 'next/router';
 
 const NavLink = React.forwardRef(( { href, onClick, children}, ref) => {
+    const router = useRouter();
+    console.log(router);
     return (
-        <a href={href} onClick={onClick} ref={ref}>{children}</a>
+        <a 
+            href={href} 
+            onClick={onClick} 
+            ref={ref}
+            style={{ color: router.pathname === href ? 'red' : 'black' }}
+        >
+            {children}
+        </a>
     );
 })
 
