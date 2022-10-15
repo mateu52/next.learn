@@ -11,7 +11,7 @@ const NavLink = React.forwardRef(( { href, onClick, children}, ref) => {
             href={href} 
             onClick={onClick} 
             ref={ref}
-            style={{ color: router.pathname === href ? 'red' : 'black' }}
+            style={{ padding:4, color: router.pathname === href ? 'red' : 'black' }}
         >
             {children}
         </a>
