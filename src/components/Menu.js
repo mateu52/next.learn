@@ -27,6 +27,9 @@ function Menu() {
             <Link href="/about" passHref>
             <NavLink>About</NavLink>
             </Link>
+            <Link href="/posts" passHref>
+            <NavLink>Posts</NavLink>
+            </Link>
             <Link href="/contact" passHref>
             <NavLink>Contact</NavLink>
             </Link>
